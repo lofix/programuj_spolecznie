@@ -1,180 +1,101 @@
-/*** CSS Reset ***/
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
-
-
-/*** GENERIC ***/
-
-html,
-body {
-    width: 100%;
-}
-
-a {
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-.main-width {
-    max-width: 1366px;
-    width: 100%;
-    margin: 0 auto;
-}
-
-
-/*** O PROJEKCIE ***/
-
-.cl_logo {
-    width: 146px;
-    height: 34px;
-    background-image: url('../images/programuj-spolecznie-logo%20CL.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-top: 52px;
-    margin-left: 35px;
-}
-
-#about {
-    h1 {
-        font-family: 'Ubuntu', sans-serif;
-        text-align: center;
-        color: #feb933;
-        font-size: 2.5rem;
-        font-weight: 700;
-        line-height: 1.175;
-        padding-top: 35px;
-        padding-bottom: 49px;
+    /*** CSS Reset ***/
+    
+    html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    b,
+    u,
+    i,
+    center,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    canvas,
+    details,
+    embed,
+    figure,
+    figcaption,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    output,
+    ruby,
+    section,
+    summary,
+    time,
+    mark,
+    audio,
+    video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
     }
-    span {
-        font-family: Ubuntu;
-        color: #bcbec0;
-        font-size: 2.5rem;
-        font-weight: 700;
-        line-height: 1.175;
-        text-align: center;
+    /*** GENERIC ***/
+    
+    html,
+    body {
+        width: 100%;
+        clear: both;
     }
-    p {
-        color: #4d4d4f;
-    }
-}
-
-#text1 {
-    width: 640px;
-    height: 70px;
-    margin: auto;
-    padding-bottom: 56px;
-    p {
-        font-family: 'Ubuntu', sans-serif;
-        color: #4d4d4f;
-        font-size: 1.25rem;
-        font-weight: 400;
-        line-height: 1.25;
-        text-align: center;
-    }
-}
-
-.construction_site {
-    background-image: url('../images/main_img.png');
-    width: 720px;
-    height: 386px;
-    margin: 0 auto;
-}
-
-
-/*** O NAS ***/
-
-#aboutUs {
-    border-width: 1px;
-    border-color: #dedede;
-    border-style: solid;
-    background-color: #f1f2f2;
+    
     h2 {
         font-family: 'Ubuntu', sans-serif;
         color: #4d4d4f;
@@ -182,137 +103,13 @@ a {
         font-weight: 400;
         line-height: 0.719;
         text-align: center;
-        margin-top: 79px;
-        margin-bottom: 43px;
     }
-    p {
-        color: #4d4d4f;
-    }
-}
-
-.btn {
-    margin: 0 auto;
-    display: block;
-    margin-bottom: 74px;
-    width: 200px;
+    
     a {
+        text-decoration: none;
+        text-transform: uppercase;
         display: inline-block;
-        //        margin: 0 auto;
-        padding: 10px 40px;
-        font-family: Ubuntu;
-        color: #f0ffff;
-        font-size: 0.813rem;
-        font-weight: 500;
-        background-color: #fdb933;
-    }
-}
-
-
-/*** O Projektach ***/
-
-h3 {
-    font-family: Ubuntu;
-    color: #4d4d4f;
-    font-size: 1.563rem;
-    font-weight: 400;
-    line-height: 1.48;
-    text-align: center;
-    margin-bottom: 81px;
-}
-
-#projects {
-    h2 {
-        font-family: 'Ubuntu', sans-serif;
-        color: #4d4d4f;
-        font-size: 2rem;
-        font-weight: 400;
-        line-height: 0.719;
-        text-align: center;
-        margin-top: 76px;
-        margin-bottom: 50px;
-    }
-}
-
-#project-list {
-    margin: auto;
-    width: 50%;
-    li {
-        border: 1px solid #bcbec0;
-        border-left-style: none;
-        border-right-style: none;
-        border-bottom-style: none;
-        font-family: Ubuntu;
-        color: #4d4d4f;
-        font-size: 0.938rem;
-        font-weight: 400;
-        line-height: 3.333;
-        text-align: justify;
-        list-style-image: url('../images/Elipsa%202.png');
-        padding-left: 20px;
-    }
-    li:last-child {
-        border-bottom: 1px solid #bcbec0;
-    }
-}
-
-.pencil {
-    margin: 50px auto;
-    background-image: url(../images/weird_icon.png);
-    background-size: contain;
-    width: 105px;
-    height: 170px;
-    background-repeat: no-repeat;
-}
-
-
-/*** O uczestnikach ***/
-
-#aboutYou {
-    background-color: #5753ad;
-    h2 {
-        font-family: 'Ubuntu', sans-serif;
-        color: #ffffff;
-        font-size: 2rem;
-        font-weight: 400;
-        line-height: 0.719;
-        padding-top: 75px;
-        padding-bottom: 43px;
-        text-align: center;
-    }
-}
-
-.text {
-    width: 500px;
-    margin: 0 auto;
-    p {
-        font-family: 'Ubuntu', sans-serif;
-        color: #ffffff;
-        font-size: 0.938rem;
-        font-weight: 400;
-        line-height: 1.533;
-        padding-bottom: 72px;
-        text-align: justify;
-    }
-}
-
-.magnifier {
-    margin: 76px auto 49px auto;
-    width: 166px;
-    height: 120px;
-    background-image: url('../images/lupa_icon.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.gallery_btn {
-    margin: 0 auto;
-    display: block;
-    margin-bottom: 74px;
-    width: 200px;
-    a {
-        display:inline-block;
         margin: 0 auto;
-        border: 2px solid #5753ad;
         font-family: 'Ubuntu', sans-serif;
         color: #4d4d4f;
         font-size: 0.813rem;
@@ -320,41 +117,490 @@ h3 {
         line-height: 1.769;
         padding: 10px 20px;
     }
-}
-
-
-/*** Od czego zacząć? ***/
-
-#begin {
-    border-width: 1px;
-    border-color: #dedede;
-    border-style: solid;
-    background-color: #f1f2f2;
-    h2 {
+    
+    .grey_section {
+        border-width: 1px;
+        border-color: #dedede;
+        border-style: solid;
+        background-color: #f1f2f2;
+    }
+    
+    .violet_section {
+        background-color: #5753ad;
+        h2 {
+            font-family: 'Ubuntu', sans-serif;
+            color: #ffffff;
+            font-size: 2rem;
+            font-weight: 400;
+            line-height: 0.719;
+            text-align: center;
+        }
+    }
+    
+    .main-width {
+        max-width: 1366px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .btn {
+        box-sizing: border-box;
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 74px;
+        width: 204px;
+    }
+    
+    .orange_btn {
+        a {
+            box-sizing: border-box;
+            width: 200px;
+            text-align: center;
+            display: inline-block;
+            font-family: 'Ubuntu', sans-serif;
+            color: #f0ffff;
+            font-size: 0.813rem;
+            font-weight: 500;
+            background-color: #fdb933;
+        }
+    }
+    
+    .rev_orange_btn {
+        box-sizing: border-box;
+        margin-left: 149px;
+        a {
+            padding-top: 7px;
+            box-sizing: border-box;
+            color: #ffcc33;
+            width: 200px;
+            text-align: center;
+            display: inline-block;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 0.813rem;
+            font-weight: 500;
+            border-width: 2px;
+            border-color: #fdb933;
+            border-style: solid;
+            background-color: #fefefe;
+        }
+    }
+    /*** NAV ***/
+    
+    nav {
+        display: inline-block;
+        top: 68px;
+        position: fixed;
+        right: 0;
+        clear: both;
+    }
+    
+    .sec_name {
         font-family: 'Ubuntu', sans-serif;
         color: #4d4d4f;
-        font-size: 2rem;
+        font-size: 0.813rem;
+        font-weight: 500;
+        display: block;
+        float: left;
+        position: absolute;
+    }
+    
+    #first_name {
+        top: 24px;
+    }
+    
+    #second_name {
+        top: 24+63px;
+    }
+    
+    #third_name {
+        top: 24+63*2px;
+    }
+    
+    #fourth_name {
+        top: 24+63*3px;
+    }
+    
+    #fifth_name {
+        top: 24+63*4px;
+    }
+    
+    .sec_num {
+        display: block;
+        float: left;
+        clear: both;
+        font-family: 'Ubuntu', sans-serif;
+        color: #bcbec0;
+        font-size: 0.75rem;
+        font-weight: 500;
+        line-height: 2.25;
+        top: -13px;
+        left: -18px;
+        position: relative;
+    }
+    
+    .long_bar {
+        display: inline-block;
+        background-color: #bcbec0;
+        width: 99px;
+        height: 2px;
+        float: right;
+        clear: both;
+        margin-bottom: 7px;
+    }
+    
+    .short_bar {
+        display: inline-block;
+        float: right;
+        clear: both;
+        background-color: #bcbec0;
+        width: 15px;
+        height: 2px;
+        margin-bottom: 7px;
+    }
+    
+    .longer_bar {
+        display: inline-block;
+        float: right;
+        clear: both;
+        background-color: #bcbec0;
+        width: 116px;
+        height: 2px;
+    }
+    /*** O PROJEKCIE ***/
+    
+    .cl_logo {
+        width: 146px;
+        height: 34px;
+        background-image: url('../images/programuj-spolecznie-logo%20CL.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-top: 52px;
+        margin-left: 35px;
+    }
+    
+    #about {
+        h1 {
+            font-family: 'Ubuntu', sans-serif;
+            text-align: center;
+            color: #feb933;
+            font-size: 2.5rem;
+            font-weight: 700;
+            line-height: 1.175;
+            padding-top: 35px;
+            padding-bottom: 49px;
+        }
+        span {
+            font-family: 'Ubuntu', sans-serif;
+            color: #bcbec0;
+            font-size: 2.5rem;
+            font-weight: 700;
+            line-height: 1.175;
+            text-align: center;
+        }
+        p {
+            color: #4d4d4f;
+        }
+    }
+    
+    #text1 {
+        width: 640px;
+        height: 70px;
+        margin: auto;
+        padding-bottom: 56px;
+        p {
+            font-family: 'Ubuntu', sans-serif;
+            color: #4d4d4f;
+            font-size: 1.25rem;
+            font-weight: 400;
+            line-height: 1.25;
+            text-align: justify;
+        }
+    }
+    
+    .construction_site {
+        background-image: url('../images/main_img.png');
+        width: 720px;
+        height: 386px;
+        margin: 0 auto;
+    }
+    /*** O NAS ***/
+    
+    #aboutUs {
+        p {
+            color: #4d4d4f;
+        }
+        h2 {
+            margin-top: 79px;
+            margin-bottom: 43px;
+        }
+    }
+    /*** O Projektach ***/
+    
+    h3 {
+        font-family: Ubuntu;
+        color: #4d4d4f;
+        font-size: 1.563rem;
         font-weight: 400;
-        line-height: 0.719;
+        line-height: 1.48;
         text-align: center;
-        margin-top: 66px;
-        margin-bottom: 50px;
+        margin-bottom: 53px;
     }
-    p {
-        color: #4d4d4f;
+    
+    #projects {
+        h2 {
+            font-family: 'Ubuntu', sans-serif;
+            color: #4d4d4f;
+            font-size: 2rem;
+            font-weight: 400;
+            line-height: 1.469;
+            text-align: center;
+            margin-top: 76px;
+            margin-bottom: 50px;
+        }
     }
-}
-
-.text {
-    width: 500px;
-    margin: 0 auto;
-    p {
-        font-family: 'Ubuntu', sans-serif;
-        color: #ffffff;
-        font-size: 0.938rem;
-        font-weight: 400;
-        line-height: 1.533;
-        padding-bottom: 72px;
-        text-align: justify;
+    
+    #project-list {
+        margin: auto;
+        width: 50%;
+        li {
+            border: 1px solid #bcbec0;
+            border-left-style: none;
+            border-right-style: none;
+            border-bottom-style: none;
+            font-family: Ubuntu;
+            color: #4d4d4f;
+            font-size: 0.938rem;
+            font-weight: 400;
+            line-height: 3.333;
+            text-align: justify;
+            list-style-image: url('../images/Elipsa%202.png');
+            padding-left: 20px;
+        }
+        li:last-child {
+            border-bottom: 1px solid #bcbec0;
+        }
     }
-}
+    
+    .pencil {
+        margin: 50px auto;
+        background-image: url(../images/weird_icon.png);
+        background-size: contain;
+        width: 105px;
+        height: 170px;
+        background-repeat: no-repeat;
+    }
+    /*** O uczestnikach ***/
+    
+    #aboutYou {
+        background-color: #5753ad;
+        h2 {
+            font-family: 'Ubuntu', sans-serif;
+            color: #ffffff;
+            font-size: 2rem;
+            font-weight: 400;
+            line-height: 0.719;
+            padding-top: 75px;
+            padding-bottom: 43px;
+            text-align: center;
+        }
+    }
+    
+    .text {
+        width: 500px;
+        margin: 0 auto;
+        p {
+            font-family: 'Ubuntu', sans-serif;
+            color: #ffffff;
+            font-size: 0.938rem;
+            font-weight: 400;
+            line-height: 1.533;
+            padding-bottom: 72px;
+            text-align: center;
+        }
+    }
+    
+    .magnifier {
+        margin: 76px auto 49px auto;
+        width: 166px;
+        height: 120px;
+        background-image: url('../images/lupa_icon.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    
+    .gallery_btn {
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 74px;
+        width: 200px;
+        a {
+            display: inline-block;
+            margin: 0 auto;
+            border: 2px solid #5753ad;
+            font-family: 'Ubuntu', sans-serif;
+            color: #4d4d4f;
+            font-size: 0.813rem;
+            font-weight: 500;
+            line-height: 1.769;
+            padding: 10px 20px;
+        }
+    }
+    /*** Od czego zacząć? ***/
+    
+    #begin {
+        p {
+            color: #4d4d4f;
+        }
+        h2 {
+            margin-top: 66px;
+            margin-bottom: 50px;
+        }
+    }
+    
+    .text {
+        width: 500px;
+        margin: 0 auto;
+        p {
+            font-family: 'Ubuntu', sans-serif;
+            color: #ffffff;
+            font-size: 0.938rem;
+            font-weight: 400;
+            line-height: 1.533;
+            padding-bottom: 72px;
+            text-align: justify;
+        }
+    }
+    /*** Zgłoszenie ***/
+    
+    .mouse {
+        background-image: url('../images/mouse_icon.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 204px;
+        height: 109px;
+        margin: 90px auto 84px auto;
+    }
+    
+    #apply {
+        h2 {
+            font-family: 'Ubuntu', sans-serif;
+            color: #4d4d4f;
+            font-size: 2rem;
+            font-weight: 400;
+            line-height: 0.719;
+            text-align: center;
+            margin-top: 66px;
+            margin-bottom: 50px;
+        }
+        p {
+            color: #4d4d4f;
+            text-align: center;
+        }
+    }
+    
+    .btns {
+        margin: 0 auto;
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 102px;
+    }
+    /*** Partners ***/
+    
+    #partners {
+        h2 {
+            margin-top: 68px;
+            margin-bottom: 47px;
+        }
+    }
+    
+    .partner_logo {
+        width: 200px;
+        height: 200px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    
+    .partners {
+        margin: 0 auto;
+        width: 550px;
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        flex-wrap: wrap;
+        #epanstwo {
+            background-image: url('../images/fundacja_epanstwo_logo.png');
+        }
+        #koduj {
+            background-image: url('../images/koduj_dla_polski%20logo.png');
+        }
+        #techsoup {
+            background-image: url('../images/techsoup%20logo.png');
+        }
+        #labee {
+            background-image: url('../images/laboratorium%20ee%20logo.png');
+        }
+    }
+    /*** Contact ***/
+    
+    //        .test {
+    //        float: right;
+    //        clear: both;
+    //    }
+    #contact {
+        h2 {
+            line-height: 1.344;
+            text-align: center;
+            padding-top: 77px;
+            padding-bottom: 42px;
+        }
+    }
+    
+    #contact_data {
+        position: relative;
+        left: 297px;
+        p {
+            font-family: Ubuntu;
+            color: #fffffc;
+            font-size: 0.938rem;
+            font-weight: 400;
+            line-height: 1.533;
+            text-align: left;
+        }
+    }
+    /*** Footer ***/
+    
+    #footer {
+        background-color: #4d4d4f;
+    }
+    
+    .prog_logo {
+        margin-bottom: 29px;
+        margin-right: 35px;
+        margin-top: 31px;
+        width: 114px;
+        height: 50px;
+        background-image: url('../images/programuj-spolecznie-logo.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        float: right;
+    }
+    
+    .copyright {
+        margin-left: 35px;
+        margin-bottom: 28px;
+        padding-top: 32px;
+        display: inline-block;
+        //        width: 750px;
+        p {
+            font-family: 'OpenSans', sans-serif;
+            color: #ffffff;
+            font-size: 0.75rem;
+            font-weight: 400;
+            line-height: 2.083;
+        }
+    }
+    
+    .author {
+        font-weight: 600;
+    }
