@@ -140,6 +140,9 @@ a {
         line-height: 1.175;
         text-align: center;
     }
+    p {
+        color: #4d4d4f;
+    }
 }
 
 #text1 {
@@ -191,15 +194,15 @@ a {
     margin: 0 auto;
     display: block;
     margin-bottom: 74px;
-    width: 204px;
+    width: 200px;
     a {
-        margin: 0 auto;
+        display: inline-block;
+        //        margin: 0 auto;
         padding: 10px 40px;
         font-family: Ubuntu;
         color: #f0ffff;
         font-size: 0.813rem;
         font-weight: 500;
-        //        line-height: 1.769;
         background-color: #fdb933;
     }
 }
@@ -307,6 +310,7 @@ h3 {
     margin-bottom: 74px;
     width: 200px;
     a {
+        display:inline-block;
         margin: 0 auto;
         border: 2px solid #5753ad;
         font-family: 'Ubuntu', sans-serif;
