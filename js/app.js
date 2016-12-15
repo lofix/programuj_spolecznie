@@ -1,36 +1,46 @@
 $(document).ready(function (){
 
-  // Hamburger Menu
+  //Hamburger Menu
 
-  var hamburger_menu = $("#hamb_menu");
-  var hamburger_menu_big = $("#hamb_menu_big");
-  var closing_btn = $(".closing_btn");
+  var hamburgerMenu = $("#hamb_menu");
+  var hamburgerMenuBig = $("#hamb_menu_big");
+  var closingBtn = $(".closing_btn");
 
-  hamburger_menu.on("click", function(){
+  hamburgerMenu.on("click", function(){
     $(this).addClass("invisible");
-    // hamburger_menu_big.removeClass("invisible");
-    hamburger_menu_big.addClass("visible");
+    hamburgerMenuBig.addClass("visible");
     $(this).removeClass("visible");
   })
-  closing_btn.on("click", function(){
+  closingBtn.on("click", function(){
 
-    hamburger_menu.removeClass("invisible");
-    hamburger_menu_big.removeClass("visible");
-    hamburger_menu_big.addClass("invisible");
+    hamburgerMenu.removeClass("invisible");
+    hamburgerMenuBig.removeClass("visible");
+    hamburgerMenuBig.addClass("invisible");
 
   })
 
   //Desktop Navigation
 
-  var desktop_nav = $("#desktop_menu");
-  var section_names = desktop_nav.find(".sec_name");
-  console.log(desktop_nav);
-  console.log(section_names);
-  section_names.on("click",function(){
+  var desktopNav = $("#desktop_menu");
+  var sectionNames = desktopNav.find(".sec_name");
+
+  sectionNames.on("click",function(){
     var destination = $(this).data("name");
-    console.log($(destination).offset());
     $("html, body").animate({
                 scrollTop: $(destination).offset().top
             }, 1000);
   })
+
+  //Mobile Navigation
+
+  var mobileNav = $("#mob_menu");
+  var mobileSectionNames = mobileNav.find(".sec_name");
+  console.log(mobileSectionNames);
+  mobileSectionNames.on("click",function(){
+    var mobileDestination = $(this).data("name");
+    $("html, body").animate({
+                scrollTop: $(mobileDestination).offset().top
+            }, 1000);
+  })
+
 })
