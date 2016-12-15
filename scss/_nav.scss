@@ -1,0 +1,110 @@
+/*** NAV DESKTOP ***/
+#reg_nav {
+    display: inline-block;
+    top: 50px;
+    position: fixed;
+    right: 0;
+    clear: both;
+    // width: 100%;
+}
+
+#desktop_menu {
+    .sec_name {
+        font-family: 'Ubuntu', sans-serif;
+        color: #4d4d4f;
+        font-size: 0.813rem;
+        font-weight: 500;
+        display: block;
+        float: left;
+        position: absolute;
+    }
+
+    #first_name {
+        top: 24px;
+    }
+
+    #second_name {
+        top: 24+63px;
+    }
+
+    #third_name {
+        top: 24+63*2px;
+    }
+
+    #fourth_name {
+        top: 24+63*3px;
+    }
+
+    #fifth_name {
+        top: 24+63*4px;
+    }
+
+    .sec_num {
+        display: block;
+        float: left;
+        clear: both;
+        font-family: 'Ubuntu', sans-serif;
+        color: #bcbec0;
+        font-size: 0.75rem;
+        font-weight: 500;
+        line-height: 2.25;
+        top: -13px;
+        left: -18px;
+        position: relative;
+    }
+
+    .long_bar {
+        display: inline-block;
+        background-color: #bcbec0;
+        width: 99px;
+        height: 2px;
+        float: right;
+        clear: both;
+        margin-bottom: 7px;
+    }
+
+    .short_bar {
+        display: inline-block;
+        float: right;
+        clear: both;
+        background-color: #bcbec0;
+        width: 15px;
+        height: 2px;
+        margin-bottom: 7px;
+    }
+
+    .longer_bar {
+        display: inline-block;
+        float: right;
+        clear: both;
+        background-color: #bcbec0;
+        width: 116px;
+        height: 2px;
+    }
+}
+/*** NAV MOB***/
+#mob_nav {
+    display: none;
+    display: inline-block;
+    top: 50px;
+    position: fixed;
+    right: 0;
+    clear: both;
+
+    #hamb_menu_big {
+        display: none;
+        width: 90%;
+        background-color: grey;
+    }
+
+    .hamb_bar {
+        // float: right;
+        position: relative;
+        right: 35px;
+        clear: both;
+        height: 3px;
+        margin-bottom: 7px;
+        width: 38px;
+        background-color: #4d4d4f;
+    }
+}

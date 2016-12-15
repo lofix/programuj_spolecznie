@@ -1,0 +1,192 @@
+@media screen and (max-width: 860px) {
+    #filler {
+        margin: 0 auto;
+        width: 80%;
+        height: 100px;
+    }
+    /*** Fonts ***/
+    #about h1,
+    #about span {
+        font-size: 2rem;
+    }
+
+    #about p {
+        margin-bottom: 40px;
+    }
+
+    #aboutUs {
+        h2 {
+            margin-top: 49px;
+            margin-bottom: 49px;
+            font-size: 1.25rem;
+            text-align: left;
+        }
+
+        p {
+            text-align: left;
+            margin-bottom: 69px;
+        }
+    }
+
+    #projects {
+        h2 {
+            font-size: 1.25rem;
+        }
+
+        .text {
+            h3 {
+                font-size: 1.125rem;
+            }
+        }
+    }
+
+    #project-list {
+        width: 70%;
+
+        li {
+            line-height: 1;
+            padding: 18px 0 18px 20px;
+        }
+    }
+
+    #aboutYou {
+        h2 {
+            font-size: 1.25rem;
+        }
+    }
+
+    #projects {
+        h3 {
+            font-size: 1.25rem;
+        }
+    }
+
+    #begin {
+        h2 {
+            font-size: 1.25rem;
+            text-align: left;
+        }
+
+        p {
+            text-align: left;
+        }
+    }
+
+    #apply {
+        h2 {
+            font-size: 1.25rem;
+            margin-top: 53px;
+        }
+
+        p {
+            font-size: 0.885rem;
+        }
+    }
+
+    #partners {
+        h2 {
+            font-size: 1.25rem;
+        }
+    }
+
+    #contact {
+        h2 {
+            font-size: 1.25rem;
+        }
+    }
+    /*** Footer ***/
+    .copyright {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 80%;
+    }
+
+    .claim {
+        width: 90%;
+        text-align: center;
+        margin: 0 auto;
+        padding-bottom: 38px;
+    }
+    /*** Header ***/
+    header {
+        position: fixed;
+        clear: both;
+    }
+    /*** Buttons ***/
+    .btns {
+        margin: 0 auto 20px;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    .rev_orange_btn {
+        margin-top: 14px;
+        margin-bottom: 20px;
+    }
+    /*** NAV ***/
+    #desktop_menu {
+        .long_bar,
+        .longer_bar,
+        .sec_name,
+        .short_bar {
+            display: none;
+        }
+    }
+
+    #mob_nav {
+        display: block;
+        width: 100%;
+
+        #hamb_menu {
+            display: none;
+            float: right;
+        }
+
+        #hamb_menu_big {
+            display: block;
+            width: 85%;
+            height: 500px;
+            float: right;
+        }
+
+        .hamb_bar {
+            display: block;
+        }
+    }
+    /*** CL LOGO ***/
+    .long_logo {
+        display: none;
+    }
+
+    .short_logo {
+        width: 30%;
+        display: block;
+
+        .cls-1 {
+            fill: #faba20;
+        }
+
+        .cls-2 {
+            fill: #4a4a49;
+        }
+    }
+
+    ,
+    .text {
+        width: 70%;
+    }
+
+    #contact_data {
+        width: 80%;
+    }
+
+    .author:last-child {
+        position: relative;
+        top: 20px;
+    }
+
+    .partners {
+        width: 70%;
+    }
+}
