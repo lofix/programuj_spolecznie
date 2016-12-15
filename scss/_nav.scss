@@ -17,6 +17,7 @@
         display: block;
         float: left;
         position: absolute;
+        cursor: pointer;
     }
 
     #first_name {
@@ -99,6 +100,7 @@
         height: 797px;
 
         .closing_btn {
+            cursor: pointer;
             background-image: url('../images/X_sign.png');
             background-size: contain;
             background-repeat: no-repeat;

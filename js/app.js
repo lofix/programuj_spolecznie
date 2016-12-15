@@ -19,4 +19,18 @@ $(document).ready(function (){
     hamburger_menu_big.addClass("invisible");
 
   })
+
+  //Desktop Navigation
+
+  var desktop_nav = $("#desktop_menu");
+  var section_names = desktop_nav.find(".sec_name");
+  console.log(desktop_nav);
+  console.log(section_names);
+  section_names.on("click",function(){
+    var destination = $(this).data("name");
+    console.log($(destination).offset());
+    $("html, body").animate({
+                scrollTop: $(destination).offset().top
+            }, 1000);
+  })
 })
