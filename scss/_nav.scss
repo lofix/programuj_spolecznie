@@ -92,15 +92,65 @@
     clear: both;
 
     #hamb_menu_big {
-        display: none;
-        width: 90%;
-        background-color: grey;
+        // display: none;
+        width: 220px;
+        background-color: #5753ad;
+        box-shadow: -2px 2px 2.86px 10.14px rgba(0, 0, 0, 0.06);
+        height: 797px;
+
+        .closing_btn {
+            background-image: url('../images/X_sign.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 20px;
+            height: 20px;
+            float: right;
+            margin-top: 20px;
+            margin-right: 20px;
+            transform-origin: center center;
+        }
+
+        #mob_menu {
+            margin-top: 57px;
+            margin-left: 30px;
+
+            .sec_name {
+                font-family: 'Ubuntu',sans-serif;
+                color: #fefefe;
+                font-size: 1rem;
+                font-weight: 500;
+                line-height: 1.688;
+            }
+
+            .sec_num {
+                font-family: 'Ubuntu',sans-serif;
+                color: #fefefe;
+                font-size: 0.75rem;
+                font-weight: 500;
+                line-height: 2.25;
+                position: relative;
+                top: -13px;
+                left: -18px;
+            }
+
+            .long_bar {
+                background-color: #fefefe;
+                width: 101px;
+                height: 3px;
+                margin: 25px 0 25px 20px;
+            }
+
+            .longer_bar {
+                background-color: #fefefe;
+                width: 119px;
+                height: 3px;
+                margin: 20px 0;
+            }
+        }
     }
 
     .hamb_bar {
-        // float: right;
         position: relative;
-        right: 35px;
         clear: both;
         height: 3px;
         margin-bottom: 7px;

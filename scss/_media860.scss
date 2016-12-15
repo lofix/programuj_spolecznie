@@ -136,16 +136,16 @@
 
     #mob_nav {
         display: block;
-        width: 100%;
-
+        // width: 100%;
         #hamb_menu {
-            display: none;
+            position: relative;
+            right: 35px;
             float: right;
         }
 
         #hamb_menu_big {
-            display: block;
-            width: 85%;
+            // display: none;
+            width: 220px;
             height: 500px;
             float: right;
         }

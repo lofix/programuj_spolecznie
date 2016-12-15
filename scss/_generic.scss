@@ -5,6 +5,14 @@ html {
     clear: both;
 }
 
+.invisible {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
 #text1 {
     margin-bottom: 56px;
 }

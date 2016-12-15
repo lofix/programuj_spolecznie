@@ -22,3 +22,17 @@ a:visited {
         background-color: #5753ad;
     }
 }
+
+.closing_btn:hover {
+    animation-name: rotation;
+    animation-duration: 2s;
+}
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(180deg);
+    }
+}
