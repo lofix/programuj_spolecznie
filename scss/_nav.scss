@@ -54,9 +54,12 @@
         position: relative;
     }
 
+    .bar {
+        background-color: #bcbec0;
+    }
+
     .long_bar {
         display: inline-block;
-        background-color: #bcbec0;
         width: 99px;
         height: 2px;
         float: right;
@@ -68,7 +71,6 @@
         display: inline-block;
         float: right;
         clear: both;
-        background-color: #bcbec0;
         width: 15px;
         height: 2px;
         margin-bottom: 7px;
@@ -78,7 +80,7 @@
         display: inline-block;
         float: right;
         clear: both;
-        background-color: #bcbec0;
+        // background-color: #bcbec0;
         width: 116px;
         height: 2px;
     }

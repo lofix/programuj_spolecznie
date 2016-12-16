@@ -1,77 +1,100 @@
-$(document).ready(function (){
+$(document).ready(function() {
 
-  //Not displaying mobile nav on desktop
+    //Not displaying mobile nav on desktop
 
-$(window).on("resize", function(){
-  var mobileNav = $("#mob_nav");
-  var windowWidth = $(this).width();
-  console.log(windowWidth);
-  if(windowWidth > 842){
-    mobileNav.css("display", "none");
-  }
-  else{
-    mobileNav.css("display", "block");
-  }
-})
+    $(window).on("resize", function() {
+        var mobileNav = $("#mob_nav");
+        var windowWidth = $(this).width();
+        console.log(windowWidth);
+        if (windowWidth > 842) {
+            mobileNav.css("display", "none");
+        } else {
+            mobileNav.css("display", "block");
+        }
+    })
 
-  //Hamburger Menu
+    //Hamburger Menu
 
-  var hamburgerMenu = $("#hamb_menu");
-  var hamburgerMenuBig = $("#hamb_menu_big");
-  var closingBtn = $(".closing_btn");
+    var hamburgerMenu = $("#hamb_menu");
+    var hamburgerMenuBig = $("#hamb_menu_big");
+    var closingBtn = $(".closing_btn");
 
-  hamburgerMenu.on("click", function(){
-    $(this).addClass("invisible");
-    hamburgerMenuBig.addClass("visible");
-    $(this).removeClass("visible");
-  })
-  closingBtn.on("click", function(){
+    hamburgerMenu.on("click", function() {
+        $(this).addClass("invisible");
+        hamburgerMenuBig.addClass("visible");
+        $(this).removeClass("visible");
+    })
+    closingBtn.on("click", function() {
 
-    hamburgerMenu.removeClass("invisible");
-    hamburgerMenuBig.removeClass("visible");
-    hamburgerMenuBig.addClass("invisible");
+        hamburgerMenu.removeClass("invisible");
+        hamburgerMenuBig.removeClass("visible");
+        hamburgerMenuBig.addClass("invisible");
 
-  })
+    })
 
-  //Desktop Navigation
+    //Desktop Navigation
 
-  var desktopNav = $("#desktop_menu");
-  var sectionNames = desktopNav.find(".sec_name");
+    var desktopNav = $("#desktop_menu");
+    var sectionNames = desktopNav.find(".sec_name");
 
-  sectionNames.on("click",function(){
-    var destination = $(this).data("name");
-    $("html, body").animate({
-                scrollTop: $(destination).offset().top
-            }, 1000);
-  })
+    sectionNames.on("click", function() {
+        var destination = $(this).data("name");
+        $("html, body").animate({
+            scrollTop: $(destination).offset().top
+        }, 1000);
+    })
 
-  //Mobile Navigation
+    //Mobile Navigation
 
-  var mobileMenu = $("#mob_menu");
-  var mobileSectionNames = mobileMenu.find(".sec_name");
-  mobileSectionNames.on("click",function(){
-    var mobileDestination = $(this).data("name");
-    $("html, body").animate({
-                scrollTop: $(mobileDestination).offset().top
-            }, 1000);
-  })
+    var mobileMenu = $("#mob_menu");
+    var mobileSectionNames = mobileMenu.find(".sec_name");
+    mobileSectionNames.on("click", function() {
+        var mobileDestination = $(this).data("name");
+        $("html, body").animate({
+            scrollTop: $(mobileDestination).offset().top
+        }, 1000);
+    })
 
+    //Colouring dekstop nav
 
+    var bars = desktopNav.find(".bar");
+    // console.log(bars.length);
+    var documentHeight = $(document).height();
+    var maxScroll = 0.8775;
+    var index = maxScroll / $(bars).length;
 
-//Colouring dekstop nav
-var bars = desktopNav.find(".bar");
-console.log(bars);
-var documentHeight = $(document).height();
-// console.log(longBars);
-// console.log(shortBars);
-$(document).on("scroll",function(){
-  var positionY = $(document).scrollTop();
-  var positionPercent = positionY/documentHeight;
-  console.log(positionPercent);
-  // console.log(desktopNav.offset().top);
+    $(document).on("scroll", function() {
+        var positionY = $(document).scrollTop();
+        var positionPercent = positionY / documentHeight;
+        var orangeBarIndex = Math.floor(positionPercent / index);
 
-})
+        bars.each(function(index, value) {
+            if (index < orangeBarIndex) {
+                $(value).css("background-color", "#feb933");
+            } else {
+                $(value).css("background-color", "#bcbec0");
+            }
+        })
 
+    })
 
+    //Animation
 
+    // var left_image = $("#left_image");
+    // var right_image = $("#right_image");
+    // $(document).on("click", function() {
+    //         console.log(left_image);
+    //         console.log(right_image);
+    //         left_image.css("position", "relative");
+    //         left_image.animate({
+    //             left: "+=50"
+    //         }, 2000)
+    //     })
+    // console.log(rectangles);
+    // rectangles.each(function(index) {
+    //         $(this).css("position", "relative");
+    //         $(this).animate({
+    //             left: "+=50"
+    //         }, 2000)
+    //     })
 })
