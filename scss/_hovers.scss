@@ -44,10 +44,27 @@ a:visited {
     animation-name: moveLeft;
     animation-duration: 7s;
     animation-iteration-count: infinite;
-    // animation: moveBack;
-    // animation-duration: 5s;
-    // animation-iteration-count: infinite;
-    // animation-delay: 5s;
+}
+
+#right_image {
+    animation-name: moveRight;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+@keyframes moveRight {
+    0% {
+        transform: translate3d(0px, 0px, 0px);
+        // animation-timing-function: ease-in;
+    }
+
+    50% {
+        transform: translate3d(180px, 0px, 0px);
+        // animation-timing-function: ease-out;
+    }
+
+    100% {
+        transform: translate3d(0px, 0px, 0px);
+    }
 }
 @keyframes moveLeft {
     0% {
@@ -64,12 +81,3 @@ a:visited {
         transform: translate3d(0px, 0px, 0px);
     }
 }
-// @keyframes moveBack {
-//     from {
-//         transform: translate(-83px);
-//     }
-//
-//     to {
-//         transform: translate(0px);
-//     }
-// }
