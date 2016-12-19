@@ -190,4 +190,12 @@
     .partners {
         width: 70%;
     }
+
+    #columns {
+        // column-gap: 0;
+        column-count: 3;
+    }
+    // #columns figure {
+    //     width: 100%;
+    // }
 }

@@ -5,7 +5,7 @@ $(document).ready(function() {
     $(window).on("resize", function() {
         var mobileNav = $("#mob_nav");
         var windowWidth = $(this).width();
-        console.log(windowWidth);
+        // console.log(windowWidth);
         if (windowWidth > 842) {
             mobileNav.css("display", "none");
         } else {

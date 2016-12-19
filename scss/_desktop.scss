@@ -7,6 +7,7 @@
     margin-top: 52px;
     margin-left: 35px;
 }
+
 .partners {
     margin: 0 auto;
     width: 500px;
@@ -33,9 +34,11 @@
         background-image: url('../images/partners/labee_logo.png');
     }
 }
-header{
-  width: 80%;
+
+header {
+    width: 80%;
 }
+
 .long_logo {
     .cls-2 {
         fill: #faba20;
@@ -189,6 +192,59 @@ h3 {
     background-repeat: no-repeat;
     background-size: contain;
 }
+/*** Gallery ***/
+.close_btn {
+    background-image: url("../images/X_sign_grey.png");
+    width: 30px;
+    height: 30px;
+    float: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    right:45px;
+    top:-50px;
+}
+
+#columns {
+  column-count: 5;
+	column-gap: 15px;
+  width: 90%;
+	margin: 50px auto;
+  position:relative;
+  z-index:3;
+}
+
+div#columns figure {
+  border-radius: 10px;
+	margin: 0 2px 15px;
+	padding: 15px;
+	padding-bottom: 10px;
+	transition: opacity .4s ease-in-out;
+  display: inline-block;
+  column-break-inside: avoid;
+  background-color:  #f1f2f2;
+}
+
+div#columns figure img {
+	width: 100%; height: auto;
+	padding-bottom: 15px;
+	margin-bottom: 5px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+div#columns figure figcaption {
+  font-family: 'Ubuntu', sans-serif;
+  color: #4d4d4f;
+  font-size: 0.938rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+@media screen and (max-width: 750px) {
+  
+}
+
 /*** Od czego zacząć? ***/
 #begin {
     p {
@@ -241,8 +297,6 @@ h3 {
     background-size: contain;
     background-repeat: no-repeat;
 }
-
-
 /*** Contact ***/
 #contact {
     h2 {
