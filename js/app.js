@@ -78,23 +78,15 @@ $(document).ready(function() {
 
     })
 
-    //Animation
+    //Gallery
 
-    // var left_image = $("#left_image");
-    // var right_image = $("#right_image");
-    // $(document).on("click", function() {
-    //         console.log(left_image);
-    //         console.log(right_image);
-    //         left_image.css("position", "relative");
-    //         left_image.animate({
-    //             left: "+=50"
-    //         }, 2000)
-    //     })
-    // console.log(rectangles);
-    // rectangles.each(function(index) {
-    //         $(this).css("position", "relative");
-    //         $(this).animate({
-    //             left: "+=50"
-    //         }, 2000)
-    //     })
+    var gallery_btn = $(".gallery_btn");
+    var gallery_closing_btn = $(".close_btn");
+    var gallery = $("#gallery");
+    gallery_btn.on("click", function() {
+        gallery.css("display", "block");
+    })
+    gallery_closing_btn.on("click", function() {
+        gallery.css("display", "none");
+    })
 })

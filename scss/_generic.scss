@@ -116,6 +116,7 @@ a {
     width: 200px;
 
     a {
+        cursor: pointer;
         display: inline-block;
         margin: 0 auto;
         border: 2px solid #5753ad;
@@ -164,6 +165,10 @@ a {
         border-style: solid;
         background-color: #fefefe;
     }
+}
+
+.close_btn {
+    cursor: pointer;
 }
 
 .link_partner {
