@@ -10,6 +10,11 @@ a:visited {
     text-decoration: none;
 }
 
+.cl_footer,
+.cl_footer:visited {
+    color: #fff;
+}
+
 .author:visited {
     color: #fff;
 }
@@ -49,24 +54,55 @@ a:visited {
 }
 
 #left_image {
-    animation-name: moveLeft;
-    animation-duration: 7s;
-    animation-iteration-count: infinite;
+    -webkit-animation: moveLeft 7s infinite;
+    -moz-animation: moveLeft 7s infinite;
+    -ms-animation: moveLeft 7s infinite;
+    // -o-animation: moveLeft 7s infinite;
+    animation: moveLeft 7s infinite;
 }
 
 #right_image {
-    animation-name: moveRight;
-    animation-duration: 8s;
-    animation-iteration-count: infinite;
+    -webkit-animation: moveRight 7s infinite;
+    animation: moveRight 8s infinite;
 }
 @keyframes moveRight {
+    0% {
+        transform: translateX(0px);
+        // animation-timing-function: ease-in;
+    }
+
+    50% {
+        transform: translateX(180px);
+        // animation-timing-function: ease-out;
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+@-webkit-keyframes moveRight {
+    0% {
+        transform: translateX(0px);
+        // animation-timing-function: ease-in;
+    }
+
+    50% {
+        transform: translateX(180px);
+        // animation-timing-function: ease-out;
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+@keyframes moveLeft {
     0% {
         transform: translate3d(0px, 0px, 0px);
         // animation-timing-function: ease-in;
     }
 
     50% {
-        transform: translate3d(180px, 0px, 0px);
+        transform: translate3d(-83px, 0px, 0px);
         // animation-timing-function: ease-out;
     }
 
@@ -74,7 +110,7 @@ a:visited {
         transform: translate3d(0px, 0px, 0px);
     }
 }
-@keyframes moveLeft {
+@-webkit-keyframes moveLeft {
     0% {
         transform: translate3d(0px, 0px, 0px);
         // animation-timing-function: ease-in;

@@ -1,5 +1,9 @@
 @media screen and (max-width: 480px) {
     #columns {
         column-count: 1;
+
+        figure {
+            margin: 0 auto;
+        }
     }
 }
