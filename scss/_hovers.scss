@@ -47,75 +47,48 @@ a:visited {
     }
 }
 
-#left_image {
-    -webkit-animation: moveLeft 7s infinite;
-    -moz-animation: moveLeft 7s infinite;
-    -ms-animation: moveLeft 7s infinite;
-    // -o-animation: moveLeft 7s infinite;
-    animation: moveLeft 7s infinite;
+.left_image {
+    animation-name: moveLeft;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
 }
 
-#right_image {
-    -webkit-animation: moveRight 7s infinite;
-    animation: moveRight 8s infinite;
+.right_image {
+    animation-name: moveRight;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
 }
 @keyframes moveRight {
     0% {
-        transform: translateX(0px);
+        -ms-transform: translate(0px, 0px);
+        transform: translate(0px, 0px);
         // animation-timing-function: ease-in;
     }
 
     50% {
-        transform: translateX(180px);
+        -ms-transform: translate(180px, 0px);
+        transform: translate(180px, 0px);
         // animation-timing-function: ease-out;
     }
 
     100% {
-        transform: translateX(0px);
-    }
-}
-@-webkit-keyframes moveRight {
-    0% {
-        transform: translateX(0px);
-        // animation-timing-function: ease-in;
-    }
-
-    50% {
-        transform: translateX(180px);
-        // animation-timing-function: ease-out;
-    }
-
-    100% {
-        transform: translateX(0px);
+        -ms-transform: translate(0px, 0px);
+        transform: translate(0px, 0px);
     }
 }
 @keyframes moveLeft {
     0% {
-        transform: translate3d(0px, 0px, 0px);
-        // animation-timing-function: ease-in;
+        -ms-transform: translate(0px, 0px);
+        transform: translate(0px, 0px);
     }
 
     50% {
-        transform: translate3d(-83px, 0px, 0px);
-        // animation-timing-function: ease-out;
+        -ms-transform: translate(-83px, 0px);
+        transform: translate(-83px, 0px);
     }
 
     100% {
-        transform: translate3d(0px, 0px, 0px);
-    }
-}
-@-webkit-keyframes moveLeft {
-    0% {
-        transform: translate3d(0px, 0px, 0px);
-        // animation-timing-function: ease-in;
-    }
-
-    50% {
-        transform: translate3d(-83px, 0px, 0px);
-        // animation-timing-function: ease-out;
-    }
-
-    100% {
-        transform: translate3d(0px, 0px, 0px);
+        -ms-transform: translate(0px, 0px);
+        transform: translate(0px, 0px);
     }
 }
