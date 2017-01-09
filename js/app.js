@@ -86,17 +86,37 @@ $(document).ready(function() {
 
     //Gallery
     var activateGallery = function() {
-        var gallery_btn = $(".gallery_btn");
-        var gallery_closing_btn = $(".close_btn");
-        var gallery = $("#gallery");
-        gallery_btn.on("click", function() {
-            gallery.css("display", "block");
-        });
-        gallery_closing_btn.on("click", function() {
-            gallery.css("display", "none");
-        });
-    }
+            var gallery_btn = $(".gallery_btn");
+            var gallery_closing_btn = $(".close_btn");
+            var gallery = $("#gallery");
+            gallery_btn.on("click", function() {
+                gallery.css("display", "block");
+            });
+            gallery_closing_btn.on("click", function() {
+                gallery.css("display", "none");
+            });
+        }
+        //Animating using GSAP
+    var animatingConstructionSite = function() {
+        TweenMax.to(".left_image", 2.5, {
+            // position: "relative",
+            transform: "translate(-83px, 0px)",
+            ease: Linear.easeNone,
+            repeat: -1,
+            yoyo: true
+        })
+        TweenMax.to(".right_image", 3, {
+            // position: "relative",
+            transform: "translate(180px, 0px)",
+            ease: Linear.easeNone,
+            repeat: -1,
+            yoyo: true
+        })
+    };
 
+
+
+    animatingConstructionSite();
     hideMobileNav();
     activeHamburgerMenu();
     activeDesktopNavigation();
