@@ -4,6 +4,10 @@
         width: 80%;
         height: 100px;
     }
+
+    .construction_site {
+        top: 8px;
+    }
     /*** Fonts ***/
     #about h1,
     #about span {
@@ -16,6 +20,7 @@
 
     #aboutUs {
         h2 {
+            line-height: 1.2;
             margin-top: 49px;
             margin-bottom: 49px;
             font-size: 1.25rem;
@@ -44,7 +49,7 @@
         width: 70%;
 
         li {
-            line-height: 1;
+            line-height: 1.2;
             padding: 18px 0 18px 20px;
         }
     }
@@ -139,14 +144,14 @@
         // width: 100%;
         #hamb_menu {
             position: relative;
-            right: 35px;
+            margin-right: 50px;
             float: right;
             cursor: pointer;
         }
 
         #hamb_menu_big {
             // display: none;
-            width: 220px;
+            width: 100vw;
             height: 500px;
             float: right;
         }

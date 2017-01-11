@@ -5,7 +5,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     margin-top: 23px;
-    margin-left: 35px;
+    margin-left: 50px;
 }
 
 .partners {
@@ -85,17 +85,20 @@ header {
 .construction_site {
     margin: 0 auto;
     width: 60%;
+    position: relative;
+    z-index: -1;
+    top: 11px;
 }
 /*** O NAS ***/
 #aboutUs {
     p {
         color: #4d4d4f;
-        text-align: left;
+        text-align: center;
         margin-bottom: 50px;
     }
 
     h2 {
-        text-align: left;
+        text-align: center;
         margin-top: 79px;
         margin-bottom: 43px;
     }
@@ -128,23 +131,22 @@ h3 {
     margin: auto;
     width: 50%;
 
+    .border {
+        height: 1px;
+        background-color: #bcbec0;
+        width: 100%;
+    }
+
     li {
-        border: 1px solid #bcbec0;
-        border-left-style: none;
-        border-right-style: none;
-        border-bottom-style: none;
         font-family: Ubuntu;
         color: #4d4d4f;
         font-size: 0.938rem;
         font-weight: 400;
         line-height: 3.333;
-        text-align: justify;
+        text-align: left;
         list-style-image: url('../images/Elipsa%202.png');
         padding-left: 20px;
-    }
-
-    li:last-child {
-        border-bottom: 1px solid #bcbec0;
+        margin-left: 12px;
     }
 }
 
