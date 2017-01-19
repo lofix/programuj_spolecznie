@@ -9,7 +9,12 @@
         top: 8px;
     }
     /*** Fonts ***/
-    #about h1,
+    #about h1 {
+        width: 70%;
+        font-size: 2rem;
+        margin: 0 auto;
+    }
+
     #about span {
         font-size: 2rem;
     }
@@ -36,6 +41,9 @@
     #projects {
         h2 {
             font-size: 1.25rem;
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .text {
@@ -63,6 +71,9 @@
     #projects {
         h3 {
             font-size: 1.25rem;
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
         }
     }
 
@@ -189,7 +200,7 @@
 
     .author:last-child {
         position: relative;
-        top: 20px;
+        // top: 20px;
     }
 
     .partners {
